@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Wheel of Misfortune</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />   
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/winwheel.min.js"></script>
+</head>
+
+<body>
+    <div align="center">
+        <audio id="sound">
+            <source src="assets/sound/good.mp3" type="audio/mpeg"></audio>
+        <audio id="spin">
+            <source src="assets/music/cc5city.mp3" type="audio/mpeg"></audio>
+
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td width="485" height="512" class="the_wheel" align="center" valign="center">
+                    <img id="prizePointer" src="assets/img/wheel_overlay.png" alt="V" onClick="startSpin();" />
+                    <canvas id="canvas" width="485" height="512">
+                    </canvas>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="resultbox">
+                        <p> --- </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/wheel_of_misfortune.js"> </script>
+</body>
+
+</html>
